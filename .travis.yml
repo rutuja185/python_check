@@ -1,12 +1,7 @@
 language: python
-python: 2.7
-install:
-  - pip install codecov
-
-# Run the unit test
-script:
-  - coverage run python_ml4.py
-
-# Push the results back to codecov
-after_success:
-  - codecov
+python:
+  - "3.6"
+  - "3.5"
+  - "3.5-dev" # 3.5 development branch
+  - "nightly" # currently points to 3.5-dev
+# command
